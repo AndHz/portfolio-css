@@ -1,101 +1,159 @@
-import Image from "next/image";
+
+
+import './globals.scss'; // Asegúrate de importar tu archivo SASS
 
 export default function Home() {
+  
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <section className="contenido">
+        <p className="c1">Software Developer</p>
+        <h1 className="c12">Hola soy André</h1>
+        <p className="c13"> Soy un desarrollador de software apasionado por la tecnología y el diseño. Con experiencia en "Next.js, Spring Boot, SCSS, Java", me encanta construir soluciones innovadoras y optimizadas para mejorar la experiencia del usuario. A lo largo de mi carrera, he trabajado en proyectos de aplicaciones web y sistemas de gestión, siempre buscando implementar las mejores prácticas en eficiencia, calidad y diseño.</p>
+        <a href="https://github.com/AndHz" className="download-cv">Descargar CV</a>
+        <img src="../llamas.png" className="perfil-image"/>
+      </section>
+
+      <div className="barra">
+      <div className="texto">✦ ACCESIBILIDAD <span className="separador">✦</span> CALIDAD <span className="separador">✦</span> DESIGN THINKING <span className="separador">✦</span> INTEGRIDAD ✦</div>
+      </div>
+
+
+      <section className="projects">
+        <p className='uptitle2'>Software Developer</p>
+        <h2 className='title2'>Proyectos</h2>
+        <p className='subtitle2'>"¡Echa un vistazo y descubre lo que puedo crear!"</p>
+        <div className="project-block">
+          <div className="project-info">
+            <h3>Título del Proyecto 1</h3>
+            <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
+            <img src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        
+        <div className="project-block">
+          <div className="project-info">
+            <h3>Título del Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
+            <p className='lenguajes'><strong>Lenguaje:</strong> Python</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
+          </div>
+          <img src="../llamas.png" alt="Imagen del Proyecto 2" className="project-image" />
+        </div>
+        
+        <div className="project-block">
+          <div className="project-info">
+            <h3>Título del Proyecto 1</h3>
+            <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
+            <img src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+          </div>
+        </div>
+
+        <div className="project-block">
+          <div className="project-info">
+            <h3>Título del Proyecto 1</h3>
+            <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
+            <img src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+          </div>
+        </div>
+
+      </section>
+
+      <div className="barra2">
+        <div className="texto">✦ ACCESIBILIDAD <span className="separador">✦</span> CALIDAD <span className="separador">✦</span> DESIGN THINKING <span className="separador">✦</span> INTEGRIDAD ✦</div>
+      </div>
+
+      <section className="about">
+        <h2>Acerca de mí</h2>
+        <h1>SKILLS</h1>
+        <div className="skills">
+          <div className='skillstec'>
+            <h3>Habilidades Técnicas</h3>
+            <p>JavaScript: 70%</p>
+            <p>HTML y CSS: 70%</p>
+            <p>Java: 70%</p>
+          </div>
+          <div className='skillspro'>
+            <h3>Habilidades Profesionales</h3>
+            <p>Comunicación: 70%</p>
+            <p>Trabajo en Equipo: 70%</p>
+            <p>Creatividad: 70%</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="linea">
+      </div>
+
+      <section className='valoraciones-section'>
+        <h2>VALORACIONES</h2>
+        <p>Algunas observaciones de los proyectos realizados</p>
+        <div className="linea2">  </div>
+        <div className='valoraciones'>
+          <div className='valoraciones-block'>
+            <div className='imagen-perfil'>
+              <img src="../llamas.png" className='imagen-perfil' /> 
+            </div>
+            <div className='parrafo-valoracion'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+              <p className='name-perfil'> Jack Smith </p>
+              <p className='name-perfil'>★★★★★</p>
+            </div>
+          </div>
+          <div className='valoraciones-block'>
+            <div className='imagen-perfil'>
+              <img src="../llamas.png" className='imagen-perfil' /> 
+            </div>
+            <div className='parrafo-valoracion'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+              <p className='name-perfil'> Jack Smith </p>
+              <p className='name-perfil'>★★★★★</p>
+            </div>
+          </div>
+          <div className='valoraciones-block'>
+            <div className='imagen-perfil'>
+              <img src="../llamas.png" className='imagen-perfil' /> 
+            </div>
+            <div className='parrafo-valoracion'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+              <p className='name-perfil'> Jack Smith </p>
+              <p className='name-perfil'>★★★★★</p>
+            </div>
+          </div>
+        </div>  
+      </section>
+
+      <div className='contacto'>
+        <div className='contac-parrafo'>
+          <h3>Comentame tu idea y hagamos ese proyecto realidad!</h3>
+          <p>Comuníquese conmigo para colaboraciones, consultas o simplemente para saludar.</p>
+        </div>
+        <div className='div-contact'>
+          <a href="#" className='contact'>Contactarme➜</a>
+        </div>
+      </div>
+
+  
+          <div className="footer">
+            <div>
+              <p>Creado por @Andre_Hz</p>
+            </div>
+            <div >
+              <div className="socials">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">YouTube</a> 
+              </div>
+            </div>
+          </div>       
     </div>
   );
 }

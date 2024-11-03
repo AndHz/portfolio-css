@@ -1,0 +1,451 @@
+// Variables
+$primary-color: #3498db;
+$primarybg-color: #0E0F26;
+$secondarybg-color: #C4F2A2;
+$w-text-color: white;
+$b-text-color: black;
+
+// Mixins
+@mixin button-style-1 {
+  background-color: $primarybg-color;
+  color: $secondarybg-color;
+  border: solid 1px $secondarybg-color;
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 15px;
+  width: 10%;
+  height: 5%;
+  transition: width 1s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%) ;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+// Global Styles
+html {
+  width: 100%;
+  height: 100%;
+  background-color: $primarybg-color;
+  font-family: DM sans;
+  color: $w-text-color;
+}
+
+// Header
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px; // Ajusta la altura según sea necesario
+  padding: 0 20px;
+  background-color: $primarybg-color;
+  display: flex;
+  justify-content: center; // Centra los elementos horizontalmente
+  align-items: center; // Centra los elementos verticalmente
+  color: $w-text-color;
+  z-index: 1000; // Asegúrate de que el header esté por encima de otros elementos
+  top: 0;
+  left: 0;
+  
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; // Alinea los items del menú en fila
+      gap: 20px; // Espaciado entre los ítems del menú
+      
+      li {
+        margin: 0 15px;
+        a{
+          text-decoration: none; // Elimina el subrayado
+          color: $w-text-color; // Color de los enlaces
+          font-size: 18px; // Tamaño del texto del menú
+          transition: color 0.3s;
+
+          &:hover {
+            color: darken($w-text-color, 60%); // Cambia el color al hacer hover
+          }
+        }
+        .contratame {
+          @include button-style-1();
+          background-color: #C4F2A2;
+          color: $b-text-color;
+          width: 100%;
+          height: 100%;
+          padding: 10px 15px;
+          display: inline;
+        }
+        
+      }
+    }
+  }
+}
+
+
+// Content Section
+.contenido {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 0fr;
+  grid-auto-rows: auto; // Cada fila se adapta a su contenido
+  background-color: $primarybg-color;
+  text-align: start;
+  padding:10%;
+  gap: 0;
+  
+  
+  .c1, .c12, .c13 {
+    place-items: start;
+    margin: 0;
+    border: 0;
+    margin-top:2%;
+  }
+
+  .c1 {
+    font-size: 30px;
+    grid-column: 1;
+    grid-row: 1;
+    color:$secondarybg-color;
+  }
+  .c12 {
+    
+    font-weight: bold;
+    font-size: 70px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .c13 {
+    font-size: 25px;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+
+
+  .download-cv  {
+    @include button-style-1();
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 22px;
+    padding: 2% 2%;
+    margin-top: 5%;
+    width: 25%;
+    height: 34%;
+    text-align: center;
+    
+    display: inline-block; // Hace que el botón respete su tamaño
+
+    
+    &:hover {
+      background-color: darken($secondarybg-color, 10%);
+      color: black;
+      width: 200px;
+    }
+  }
+  .perfil-image {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1 /span 4;
+    width: 70%;
+    height: auto;
+    align-self: center; // Centra verticalmente la imagen en su columna
+    max-width: 90%; // Limita el tamaño máximo de la imagen
+    margin-left: 15%;
+    border-radius: 50%;
+  }
+}
+
+.uptitle2 {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 25px;
+  color: $secondarybg-color;
+}
+.title2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 70px;
+}
+.subtitle2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+//estilo barra diagonal
+.barra {
+  position: absolute;
+  top: 110%;
+  left: -15px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #c3faa6, #80c0ba);
+  padding: 1rem 0;
+  transform: rotate(-3deg); /* Ajusta el ángulo según tus necesidades */
+  width: 100vw;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.texto {
+  display: inline-block;
+  animation: scroll 15s linear infinite;
+  color: #0E0F26;
+  letter-spacing: 1rem;
+}
+.separador {
+  padding: 0 1rem; /* Ajusta los valores según la distancia deseada */
+}
+
+@keyframes scroll {
+  0% {
+     transform: translateX(100%);
+  }
+  100% {
+     transform: translateX(-100%);
+  }
+}
+
+.barra2 {
+  position: absolute;
+  top: 470%;
+  left: -15px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #c3faa6, #80c0ba);
+  padding: 1rem 0;
+  transform: rotate(-3deg); /* Ajusta el ángulo según tus necesidades */
+  width: 100vw;
+  z-index: 1;
+  font-weight: bold;
+}
+
+
+
+
+// Estilos para la sección de proyectos
+.projects {
+  background: radial-gradient(at -30% 40%, #C4F2A2 20px, transparent 35%), 
+              radial-gradient(at 130% 70%, #C4F2A2 20px, transparent 35%), 
+              $primarybg-color; 
+}
+
+.project-block {
+  
+  display: flex; // Cambia a flexbox
+  align-items: flex-start; // Alinea verticalmente al inicio
+  justify-content: space-between; // Espacia los elementos a los lados
+  margin: 10% 15%;
+  padding: 3%; // Espaciado interno
+  border-radius: 40px; // Bordes redondeados
+  background: linear-gradient(#32324e, 60%, #4c4b6a);
+  background-color: $primary-color; // Fondo blanco para el bloque
+  position: relative;
+  box-shadow: 0 0 10px black;
+  
+  
+
+  .project-info {
+    min-height: 400px;
+    flex: 1; // Toma el espacio restante
+
+    h3 {
+      margin: 0 35% 0 0;
+      font-size: 70px; 
+    }
+
+    p {
+      margin: 2% 35% 2% 0 ; 
+      font-size: 25px;
+    }
+    .lenguajes {
+      color: $secondarybg-color;
+    }
+
+    .project-button {
+      @include button-style-1(); // Estilo de botón
+      display: inline-block; // Hace que el botón respete su tamaño
+      margin-top: 10px; // Espacio superior del botón
+      background-color: #C4F2A2;
+      color: $b-text-color;
+      width: 8%;
+      text-align: center;
+      padding: 15px 15px;
+      font-size: 20px;
+      &:hover {
+        background-color: darken($secondarybg-color, 10%);
+        color: black;
+        width: 110px;
+      }
+    }
+  }
+
+  .project-image {
+    position: absolute;
+    width: 100%; // Ajusta la imagen al ancho de su contenedor
+    height: auto; // Mantiene la proporción de la imagen
+    max-width: 450px; // Limita el tamaño máximo de la imagen
+    right: 0;
+    bottom: 0;
+    border-radius: 40px;
+  }
+}
+
+ //Sobre mi
+.about {
+    margin-top: 300px;
+    text-align: center;
+    padding: 0 20%;
+    h2{
+      color: $secondarybg-color;
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    h1{
+      font-size: 70px;
+      margin-top: 0;
+    }
+    .skills {
+      text-align: start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 20px;
+      .skillstec {
+        //margin: 0 10%;
+        h3 {
+          color: $secondarybg-color;
+        }
+      }
+      .skillspro {
+        //margin: 0 10%;
+        h3 {
+          color: $secondarybg-color;
+        }
+      }
+    }
+}
+
+//VALORACIONES
+
+.linea{
+  border: solid $secondarybg-color 1px;
+  margin: 5% 20% 0;
+}
+
+.valoraciones-section{
+  text-align: center;
+  margin: 3% 5% 10%;
+  
+  h2{
+    margin: 0;
+    font-size: 70px;
+  }
+  p{
+    margin: 0;
+    font-size: 25px;
+  }
+  .linea2{
+    border: solid $secondarybg-color 1px;
+    margin: 3% 25% 5% ;
+  }
+
+  .valoraciones{
+    display: flex;
+    justify-content:space-around;
+    margin: 10% 5%;
+    .valoraciones-block{
+      border: solid white 2px;
+      width: 450px;
+      height: 270px;
+      max-height: 270px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .imagen-perfil{
+        border-radius: 500px;
+        margin: 5%;
+        width: 100px;
+        height: auto;
+      }
+      .parrafo-valoracion{
+        margin: 5%;
+        font-size: 25px;
+        text-align: start;
+        .name-perfil{
+          margin: 5% 0;
+          color: $secondarybg-color;
+        }
+
+      }
+    }
+  }
+}
+
+//CONTACTO
+.contacto {
+  display: flex;
+  text-align: start;
+  align-items: center; // Alinea verticalmente al inicio
+  justify-content: space-between; // Espacia los elementos a los lados
+  margin: 0 15%;
+  padding: 1% 3%; // Espaciado interno
+  border-radius: 40px; // Bordes redondeados
+  background: linear-gradient(to right, #c3faa6, #80c0ba);
+  background-color: $primary-color; // Fondo blanco para el bloque
+  position: relative;
+  font-size: 20px;
+  color: black;
+  
+  .div-contact{
+    @include button-style-1();
+    border: 0;
+    margin: 0;
+    padding: 15px 5%;
+    text-align: center;
+    .contact{
+      text-decoration: none; // Elimina el subrayado
+      color: white;
+    }
+  }
+}
+
+
+// Footer
+.footer {
+  margin: 5% 1% 0;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  .socials{
+    text-align: start;
+    margin: 0;
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+
+      &:hover {
+        color: darken($primary-color, 5%);
+      }
+    }
+  }
+
+    
+  
+}
