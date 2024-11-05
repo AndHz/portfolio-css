@@ -1,6 +1,7 @@
 
 
 import './globals.scss'; // Asegúrate de importar tu archivo SASS
+import Image from 'next/image';
 
 export default function Home() {
   
@@ -10,9 +11,9 @@ export default function Home() {
       <section className="contenido">
         <p className="c1">Software Developer</p>
         <h1 className="c12">Hola soy André</h1>
-        <p className="c13"> Soy un desarrollador de software apasionado por la tecnología y el diseño. Con experiencia en "Next.js, Spring Boot, SCSS, Java", me encanta construir soluciones innovadoras y optimizadas para mejorar la experiencia del usuario. A lo largo de mi carrera, he trabajado en proyectos de aplicaciones web y sistemas de gestión, siempre buscando implementar las mejores prácticas en eficiencia, calidad y diseño.</p>
+        <p className="c13"> Soy un desarrollador de software apasionado por la tecnología y el diseño. Con experiencia en &quot;Next.js, Spring Boot, SCSS, Java&quot;, me encanta construir soluciones innovadoras y optimizadas para mejorar la experiencia del usuario. A lo largo de mi carrera, he trabajado en proyectos de aplicaciones web y sistemas de gestión, siempre buscando implementar las mejores prácticas en eficiencia, calidad y diseño.</p>
         <a href="https://github.com/AndHz" className="download-cv">Descargar CV</a>
-        <img src="../llamas.png" className="perfil-image"/>
+        <Image src="../llamas.png" alt="Imagen de contenido"className="perfil-image"/>
       </section>
 
       <div className="barra">
@@ -21,16 +22,16 @@ export default function Home() {
 
 
       <section className="projects">
-        <p className='uptitle2'>Software Developer</p>
-        <h2 className='title2'>Proyectos</h2>
-        <p className='subtitle2'>"¡Echa un vistazo y descubre lo que puedo crear!"</p>
+        <p className="uptitle2">Software Developer</p>
+        <h2 className="title2">Proyectos</h2>
+        <p className="subtitle2">&quot;¡Echa un vistazo y descubre lo que puedo crear!&quot;</p>
         <div className="project-block">
           <div className="project-info">
             <h3>Título del Proyecto 1</h3>
             <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
-            <img src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+            <Image src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
           </div>
         </div>
         
@@ -41,7 +42,7 @@ export default function Home() {
             <p className='lenguajes'><strong>Lenguaje:</strong> Python</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
           </div>
-          <img src="../llamas.png" alt="Imagen del Proyecto 2" className="project-image" />
+          <Image src="../llamas.png" alt="Imagen del Proyecto 2" className="project-image" />
         </div>
         
         <div className="project-block">
@@ -50,7 +51,7 @@ export default function Home() {
             <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
-            <img src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+            <Image src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
           </div>
         </div>
 
@@ -60,7 +61,7 @@ export default function Home() {
             <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
-            <img src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+            <Image src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
           </div>
         </div>
 
@@ -99,7 +100,7 @@ export default function Home() {
         <div className='valoraciones'>
           <div className='valoraciones-block'>
             <div className='imagen-perfil'>
-              <img src="../llamas.png" className='imagen-perfil' /> 
+              <Image src="../llamas.png" alt='imagen de usuario' className='imagen-perfil' /> 
             </div>
             <div className='parrafo-valoracion'>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
@@ -109,7 +110,7 @@ export default function Home() {
           </div>
           <div className='valoraciones-block'>
             <div className='imagen-perfil'>
-              <img src="../llamas.png" className='imagen-perfil' /> 
+              <Image src="../llamas.png" alt='imagen de usuario' className='imagen-perfil' /> 
             </div>
             <div className='parrafo-valoracion'>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
@@ -119,7 +120,7 @@ export default function Home() {
           </div>
           <div className='valoraciones-block'>
             <div className='imagen-perfil'>
-              <img src="../llamas.png" className='imagen-perfil' /> 
+              <Image src="../llamas.png" alt='imagen de usuario' className='imagen-perfil' /> 
             </div>
             <div className='parrafo-valoracion'>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>

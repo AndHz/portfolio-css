@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'></link>
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=optional" rel='stylesheet'></link>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header >
