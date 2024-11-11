@@ -85,15 +85,15 @@ export default function Home() {
         <div className="skills">
           <div className='skillstec'>
             <h3>Habilidades Técnicas</h3>
-            <p>JavaScript: 70%</p>
-            <p>HTML y CSS: 70%</p>
-            <p>Java: 70%</p>
+            <p>JavaScript: 50%</p>
+            <p>HTML y CSS: 60%</p>
+            <p>Java: 80%</p>
           </div>
           <div className='skillspro'>
             <h3>Habilidades Profesionales</h3>
-            <p>Comunicación: 70%</p>
+            <p>Comunicación: 60%</p>
             <p>Trabajo en Equipo: 70%</p>
-            <p>Creatividad: 70%</p>
+            <p>Creatividad: 80%</p>
           </div>
         </div>
       </section>
