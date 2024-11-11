@@ -35,6 +35,8 @@ html {
   background-color: $primarybg-color;
   font-family: DM sans;
   color: $w-text-color;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 // Header
@@ -51,18 +53,26 @@ header {
   z-index: 1000; // Asegúrate de que el header esté por encima de otros elementos
   top: 0;
   left: 0;
-  
+  justify-items: center;
 
   nav {
+    display: flex;
+    .logo{
+      margin:0 500px 0 -550px;
+    }
+    
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex; // Alinea los items del menú en fila
       gap: 20px; // Espaciado entre los ítems del menú
+      align-items: center;
       
       li {
         margin: 0 15px;
+        
+        
         a{
           text-decoration: none; // Elimina el subrayado
           color: $w-text-color; // Color de los enlaces
@@ -218,7 +228,7 @@ header {
 
 .barra2 {
   position: absolute;
-  top: 470%;
+  top: 500%;
   left: -15px;
   overflow: hidden;
   white-space: nowrap;
@@ -291,16 +301,28 @@ header {
       }
     }
   }
-
-  .project-image {
-    position: absolute;
-    width: 100%; // Ajusta la imagen al ancho de su contenedor
-    height: auto; // Mantiene la proporción de la imagen
-    max-width: 450px; // Limita el tamaño máximo de la imagen
-    right: 0;
-    bottom: 0;
-    border-radius: 40px;
-  }
+    .image-container{
+      position: absolute;
+        width: 100%; // Ajusta la imagen al ancho de su contenedor
+        height: auto; // Mantiene la proporción de la imagen
+        max-width: 450px; // Limita el tamaño máximo de la imagen
+        height: 500px;
+        right: 0;
+        bottom: 0;
+        border-radius: 40px;
+        overflow: hidden;
+      .project-image {
+        position: relative;
+        width: 1000px; // Ajusta la imagen al ancho de su contenedor
+        height: auto; // Mantiene la proporción de la imagen
+        transition: transform 1s ease; /* Controla la velocidad de desplazamiento */
+      }
+      .project-image:hover {
+        transform: translateX(-50%);
+      }
+    }
+    
+  
 }
 
  //Sobre mi

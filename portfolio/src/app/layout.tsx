@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Image from 'next/image';
 import "./globals.scss"; // Asegúrate de que importas tu archivo SASS
 
 const geistSans = localFont({
@@ -31,11 +32,13 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <header >
           <nav>
+          <Image src="/logo.png" alt="Logo" className="logo" width={60} height={60}/>
             <ul>
+              
               <li><a href="#">Inicio</a></li>
-              <li><a href="#">Proyectos</a></li>
+              <li><a href="#projects">Proyectos</a></li>
               <li><a href="#">Contacto</a></li>
-              <li><a href="#">Acerca de mí</a></li>
+              <li><a href="#Acercademi">Acerca de mí</a></li>
               <li><a href="#" className="contratame">Contrátame</a></li>
             </ul>
           </nav>

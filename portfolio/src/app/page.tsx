@@ -1,7 +1,7 @@
 
-
 import './globals.scss'; // Asegúrate de importar tu archivo SASS
 import Image from 'next/image';
+
 
 export default function Home() {
   
@@ -12,66 +12,74 @@ export default function Home() {
         <p className="c1">Software Developer</p>
         <h1 className="c12">Hola soy André</h1>
         <p className="c13"> Soy un desarrollador de software apasionado por la tecnología y el diseño. Con experiencia en &quot;Next.js, Spring Boot, SCSS, Java&quot;, me encanta construir soluciones innovadoras y optimizadas para mejorar la experiencia del usuario. A lo largo de mi carrera, he trabajado en proyectos de aplicaciones web y sistemas de gestión, siempre buscando implementar las mejores prácticas en eficiencia, calidad y diseño.</p>
-        <a href="https://github.com/AndHz" className="download-cv">Descargar CV</a>
-        <Image src="../llamas.png" alt="Imagen de contenido"className="perfil-image"/>
+        <a href="/CV.pdf" className="download-cv" download="Curriculum.pdf">Descargar CV</a>
+        <Image src="/llamas.png" alt="Imagen de contenido"className="perfil-image" width={500} height={300}/>
       </section>
 
-      <div className="barra">
+      <div className="barra" >
       <div className="texto">✦ ACCESIBILIDAD <span className="separador">✦</span> CALIDAD <span className="separador">✦</span> DESIGN THINKING <span className="separador">✦</span> INTEGRIDAD ✦</div>
       </div>
 
 
-      <section className="projects">
+      <section className="projects" id="projects">
         <p className="uptitle2">Software Developer</p>
         <h2 className="title2">Proyectos</h2>
         <p className="subtitle2">&quot;¡Echa un vistazo y descubre lo que puedo crear!&quot;</p>
         <div className="project-block">
           <div className="project-info">
-            <h3>Título del Proyecto 1</h3>
-            <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
-            <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
-            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
-            <Image src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+            <h3>Portfolio Personal</h3>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
+            <div className='image-container'>
+              <Image src="/imagen-proyecto.jpg" alt="Imagen del Proyecto 1" className="project-image" width={500} height={300}/> 
+            </div>
           </div>
         </div>
         
         <div className="project-block">
           <div className="project-info">
-            <h3>Título del Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
-            <p className='lenguajes'><strong>Lenguaje:</strong> Python</p>
-            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
+            <h3>Portfolio Personal</h3>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
           </div>
-          <Image src="../llamas.png" alt="Imagen del Proyecto 2" className="project-image" />
+          <div className='image-container'>
+              <Image src="/imagen-proyecto.jpg" alt="Imagen del Proyecto 2" className="project-image" width={500} height={300}/> 
+            </div>
         </div>
         
         <div className="project-block">
           <div className="project-info">
-            <h3>Título del Proyecto 1</h3>
-            <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
-            <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
-            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
-            <Image src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+            <h3>Portfolio Personal</h3>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
+            <div className='image-container'>
+              <Image src="/imagen-proyecto.jpg" alt="Imagen del Proyecto 3" className="project-image" width={500} height={300}/> 
+            </div>
           </div>
         </div>
 
         <div className="project-block">
           <div className="project-info">
-            <h3>Título del Proyecto 1</h3>
-            <p>Este proyecto es una tienda online que la empresa tal requeria Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste. Esse magnam, consectetur repellat culpa dicta officia recusandae! Voluptate rerum ducimus repellendus ipsum distinctio blanditiis, quidem asperiores voluptas mollitia omnis?</p>
-            <p className='lenguajes'><strong>Lenguajes:</strong> JavaScript | HTML | CSS5</p>
-            <a href="https://github.com/AndHz/portfolio-css" className="project-button"><strong>Revisar</strong></a>
-            <Image src="../llamas.png" alt="Imagen del Proyecto 1" className="project-image" /> 
+            <h3>Portfolio Personal</h3>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
+            <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a> 
+            <div className='image-container'>
+              <Image src="/imagen-proyecto.jpg" alt="Imagen del Proyecto 4" className="project-image" width={500} height={300}/> 
+            </div>
           </div>
         </div>
 
       </section>
 
-      <div className="barra2">
+      <div className="barra2" >
         <div className="texto">✦ ACCESIBILIDAD <span className="separador">✦</span> CALIDAD <span className="separador">✦</span> DESIGN THINKING <span className="separador">✦</span> INTEGRIDAD ✦</div>
       </div>
 
-      <section className="about">
+      <section className="about" id='Acercademi'>
         <h2>Acerca de mí</h2>
         <h1>SKILLS</h1>
         <div className="skills">
@@ -100,30 +108,30 @@ export default function Home() {
         <div className='valoraciones'>
           <div className='valoraciones-block'>
             <div className='imagen-perfil'>
-              <Image src="../llamas.png" alt='imagen de usuario' className='imagen-perfil' /> 
+              <Image src="/llamas.png" alt='imagen de usuario' className='imagen-perfil' width={500} height={300}/> 
             </div>
             <div className='parrafo-valoracion'>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p className='name-perfil'> Jack Smith </p>
               <p className='name-perfil'>★★★★★</p>
             </div>
           </div>
           <div className='valoraciones-block'>
             <div className='imagen-perfil'>
-              <Image src="../llamas.png" alt='imagen de usuario' className='imagen-perfil' /> 
+              <Image src="/llamas.png" alt='imagen de usuario' className='imagen-perfil' width={500} height={300}/> 
             </div>
             <div className='parrafo-valoracion'>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p className='name-perfil'> Jack Smith </p>
               <p className='name-perfil'>★★★★★</p>
             </div>
           </div>
           <div className='valoraciones-block'>
             <div className='imagen-perfil'>
-              <Image src="../llamas.png" alt='imagen de usuario' className='imagen-perfil' /> 
+              <Image src="/llamas.png" alt='imagen de usuario' className='imagen-perfil' width={500} height={300}/> 
             </div>
             <div className='parrafo-valoracion'>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.”</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p className='name-perfil'> Jack Smith </p>
               <p className='name-perfil'>★★★★★</p>
             </div>
@@ -149,8 +157,8 @@ export default function Home() {
             <div >
               <div className="socials">
                 <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
+                <a href="https://www.linkedin.com/in/andre-haziel-91a168237" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/AndHz" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="#">YouTube</a> 
               </div>
             </div>
