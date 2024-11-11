@@ -28,7 +28,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
             <div className='image-container'>
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
             <div className='image-container'>
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como 'Proyectos', 'Acerca de mí' y 'Contacto'. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a> 
             <div className='image-container'>
