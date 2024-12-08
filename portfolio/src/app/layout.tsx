@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Image from 'next/image';
 import "./globals.scss"; // Asegúrate de que importas tu archivo SASS
 import Link from "next/link";
@@ -7,16 +6,6 @@ import 'bootstrap/scss/bootstrap.scss';
 
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 1200",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 1200",
-});
 
 export const metadata: Metadata = {
   title: "Mi Portafolio",

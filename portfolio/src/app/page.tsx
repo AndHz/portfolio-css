@@ -1,7 +1,6 @@
 
 import './globals.scss'; // Asegúrate de importar tu archivo SASS
 import Image from 'next/image';
-import Link from "next/link";
 
 export default function Home() {
   
