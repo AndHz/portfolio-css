@@ -1,3 +1,4 @@
+
 // Variables
 $primary-color: #3498db;
 $primarybg-color: #0E0F26;
@@ -41,6 +42,7 @@ html {
 
 // Header
 header {
+  font-family: DM sans;
   position: fixed;
   width: 100%;
   height: 100px; // Ajusta la altura según sea necesario
@@ -97,9 +99,18 @@ header {
     }
   }
 }
-
+.main {
+  background-color: $primarybg-color;
+  font-family: DM sans;
+}
+.background-page {
+  background-color: $primarybg-color;
+  font-family: DM sans;
+  color: $w-text-color;
+}
 
 // Content Section
+
 .contenido {
   margin-top: 100px;
   display: grid;
@@ -145,12 +156,10 @@ header {
     grid-column: 1;
     grid-row: 4;
     font-size: 22px;
-    padding: 2% 2%;
     margin-top: 5%;
     width: 25%;
-    height: 34%;
+    height: auto;
     text-align: center;
-    
     display: inline-block; // Hace que el botón respete su tamaño
 
     
@@ -228,7 +237,7 @@ header {
 
 .barra2 {
   position: absolute;
-  top: 500%;
+  top: 520%;
   left: -15px;
   overflow: hidden;
   white-space: nowrap;
@@ -241,8 +250,6 @@ header {
   z-index: 1;
   font-weight: bold;
 }
-
-
 
 
 // Estilos para la sección de proyectos
@@ -264,6 +271,7 @@ header {
   background-color: $primary-color; // Fondo blanco para el bloque
   position: relative;
   box-shadow: 0 0 10px black;
+  color: white;
   
   
 
@@ -272,6 +280,7 @@ header {
     flex: 1; // Toma el espacio restante
 
     h3 {
+      font-weight: bold;
       margin: 0 35% 0 0;
       font-size: 70px; 
     }
@@ -330,6 +339,7 @@ header {
     margin-top: 300px;
     text-align: center;
     padding: 0 20%;
+    color: white;
     h2{
       color: $secondarybg-color;
       font-size: 25px;
@@ -370,8 +380,10 @@ header {
 .valoraciones-section{
   text-align: center;
   margin: 3% 5% 10%;
+  color: white ;
   
   h2{
+    font-weight: bold;
     margin: 0;
     font-size: 70px;
   }
@@ -431,16 +443,26 @@ header {
   position: relative;
   font-size: 20px;
   color: black;
+  height: 150px;
   
   .div-contact{
     @include button-style-1();
     border: 0;
     margin: 0;
-    padding: 15px 5%;
+    padding: 10px 5%;
     text-align: center;
+    width: 250px;
+    height: 50px;
+    transition: transform, 1s;
+    &:hover{
+      transform: translateX(5%);
+    }
     .contact{
       text-decoration: none; // Elimina el subrayado
       color: white;
+      &:hover{
+        color: darken($w-text-color, 5%);
+      }
     }
   }
 }

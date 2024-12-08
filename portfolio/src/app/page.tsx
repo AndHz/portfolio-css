@@ -1,13 +1,13 @@
 
 import './globals.scss'; // Asegúrate de importar tu archivo SASS
 import Image from 'next/image';
-
+import Link from "next/link";
 
 export default function Home() {
   
   return (
 
-    <div>
+    <div className='background-page'>
       <section className="contenido">
         <p className="c1">Software Developer</p>
         <h1 className="c12">Hola soy André</h1>
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quot;Proyectos&quot;, &quot;Acerca de mí&quot; y &quot;Contacto&quot;. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
             <div className='image-container'>
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quot;Proyectos&quot;, &quot;Acerca de mí&quot; y &quot;Contacto&quot;. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quot;Proyectos&quot;, &quot;Acerca de mí&quot; y &quot;Contacto&quot;. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a>
             <div className='image-container'>
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="project-block">
           <div className="project-info">
             <h3>Portfolio Personal</h3>
-            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quotProyectos&quot, &quotAcerca de mí&quot y &quotContacto&quot. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
+            <p>Este proyecto de portafolio personal, desarrollado con Next.js, muestra las habilidades y proyectos en un formato visualmente atractivo e intuitivo. Incluye una navegación fluida que permite a los usuarios explorar secciones como &quot;Proyectos&quot;, &quot;Acerca de mí&quot; y &quot;Contacto&quot;. Utilizando SCSS para el diseño, el portafolio destaca un perfil profesional y facilita el acceso a su experiencia y logros en desarrollo de software</p>
             <p className='lenguajes'><strong>Lenguajes:</strong> HTML | SCSS | JavaScript</p>
             <a href="https://github.com/AndHz/portfolio-css" className="project-button" target="_blank" rel="noopener noreferrer"><strong>Revisar</strong></a> 
             <div className='image-container'>
@@ -145,7 +145,7 @@ export default function Home() {
           <p>Comuníquese conmigo para colaboraciones, consultas o simplemente para saludar.</p>
         </div>
         <div className='div-contact'>
-          <a href="#" className='contact'>Contactarme➜</a>
+          <a href="/contact" className='contact'>Contactarme➜</a>
         </div>
       </div>
 

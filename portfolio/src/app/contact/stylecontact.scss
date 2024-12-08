@@ -1,0 +1,26 @@
+
+// Variables
+$primary-color: #3498db;
+$primarybg-color: #0E0F26;
+$secondarybg-color: #C4F2A2;
+$w-text-color: white;
+$b-text-color: black;
+
+
+.container {
+    background-color: $primarybg-color;
+
+    h2{
+        margin-top: 100px;
+        color: $secondarybg-color;
+        font-size: 50px;
+    }
+    .text{
+        color: $w-text-color;
+        font-size: 25px;
+    }
+    
+    .form-label{
+        color: white;
+    }
+}
